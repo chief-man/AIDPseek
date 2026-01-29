@@ -1,1 +1,47 @@
 
+gov-metrics-dashboard/
+├── backend/                     # 后端 Spring Boot 项目
+│   ├── src/
+│   │   └── main/
+│   │       ├── java/com/example/govmetrics/
+│   │       │   ├── GovMetricsApplication.java
+│   │       │   ├── controller/
+│   │       │   │   └── MetricsController.java
+│   │       │   ├── entity/
+│   │       │   │   └── GovPerformanceMetricsWeekly.java
+│   │       │   ├── repository/
+│   │       │   │   └── MetricsRepository.java
+│   │       │   └── util/
+│   │       │       └── ExcelExporter.java
+│   │       └── resources/
+│   │           ├── application.yml
+│   │           └── data.sql (可选测试数据)
+│   ├── pom.xml
+│   └── README.md
+│
+├── frontend/                    # 前端 Vue 3 项目
+│   ├── public/
+│   ├── src/
+│   │   ├── assets/
+│   │   ├── components/
+│   │   ├── views/
+│   │   │   ├── Home.vue
+│   │   │   └── Detail.vue
+│   │   ├── router/
+│   │   │   └── index.js
+│   │   ├── App.vue
+│   │   └── main.js
+│   ├── index.html
+│   ├── package.json
+│   └── vite.config.js
+│
+├── deploy/                      # 部署脚本（可选）
+│   ├── deploy-backend.sh
+│   └── nginx.conf
+│
+├── docs/
+│   └── deployment-guide.md      # 部署说明
+│
+├── .gitignore
+├── README.md                    # 项目总览
+└── LICENSE
